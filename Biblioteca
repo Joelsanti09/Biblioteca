@@ -1,0 +1,17 @@
+package Biblioteca;
+import java.util.ArrayList;
+public class Biblioteca {
+
+	
+
+	    public static ArrayList<Libro> listaLibros = new ArrayList<Libro>();
+
+	    public static void main(String[] args) {
+	        Pais pais = new Pais(1020, "Colombia");
+	        Autor autor = new Autor(10, "Juanita", pais);
+	        Editorial editorial = new Editorial(203, "Sergio Arboleda", pais);
+
+	        Libro libro1 = new Libro(null, null, autor, editorial, 0, false);
+	    }
+	}
+
