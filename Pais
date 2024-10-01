@@ -1,0 +1,18 @@
+package Biblioteca;
+
+public class Pais {
+	private int codigo;
+	private String nombre;
+	public Pais(int codigo, String nombre) {
+		super();
+		this.codigo = codigo;
+		this.nombre = nombre;
+	}
+	@Override
+	public String toString() {
+		return "Pais [codigo=" + codigo + ", nombre=" + nombre + "]";
+	}
+	
+	
+
+}
