@@ -1,0 +1,26 @@
+package Biblioteca;
+
+public class Libro {
+	private String isbn;
+	private String titulo;
+	private Autor autor;
+	private Editorial editorial;
+	private int paginas;
+	private boolean prestado;
+	public Libro(String isbn, String titulo, Autor autor, Editorial editorial, int paginas, boolean prestado) {
+		super();
+		this.isbn = isbn;
+		this.titulo = titulo;
+		this.autor = autor;
+		this.editorial = editorial;
+		this.paginas = paginas;
+		this.prestado = prestado;
+	}
+	@Override
+	public String toString() {
+		return "Libro [isbn=" + isbn + ", titulo=" + titulo + ", autor=" + autor + ", editorial=" + editorial
+				+ ", paginas=" + paginas + ", prestado=" + prestado + "]";
+	}
+	
+	
+}
