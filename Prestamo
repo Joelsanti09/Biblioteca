@@ -1,0 +1,28 @@
+package Biblioteca;
+
+	import java.time.LocalDate;
+	import java.util.ArrayList;
+public class Prestamo {
+	
+	private int numero;
+	private LocalDate fechaPrestamo;
+	private LocalDate fechaEntrega;
+	private ArrayList<Libro>librosPrestados;
+	public Prestamo(int numero, LocalDate fechaPrestamo, LocalDate fechaEntrega,
+			ArrayList<Libro> librosPrestados) {
+		super();
+		this.numero = numero;
+		this.fechaPrestamo = fechaPrestamo;
+		this.fechaEntrega = fechaEntrega;
+		this.librosPrestados = librosPrestados;
+	}
+	public void adicionarLibro (Libro libro) {
+		
+		librosPrestados.add(libro);
+	}
+	@Override
+	public String toString() {
+		return "Prestamo [numero=" + numero + ", fechaPrestamo=" + fechaPrestamo + ", fechaEntrega=" + fechaEntrega
+				+ "]";
+	}
+	
